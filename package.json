@@ -1,0 +1,34 @@
+{
+  "name": "avalynx-ref",
+  "title": "AvalynxRef",
+  "description": "AvalynxTable is a Ref implementation for updating elements with a value like React's Ref or Vue's Ref.",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/js/avalynx-ref.js",
+  "module": "dist/js/avalynx-ref.esm.js",
+  "files": [
+    "dist/js/avalynx-ref.js",
+    "dist/js/avalynx-ref.esm.js"
+  ],
+  "keywords": [
+    "avalynx",
+    "ref",
+    "vue",
+    "react"
+  ],
+  "ignore": [
+    "package.json"
+  ],
+  "author": {
+    "name": "Juergen Schwind an the avalynx-ref Authors",
+    "url": "https://github.com/avalynx/avalynx-ref/graphs/contributors"
+  },
+  "homepage": "https://github.com/avalynx/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avalynx/avalynx-ref.git"
+  },
+  "bugs": {
+    "url": "https://github.com/avalynx/avalynx-ref/issues"
+  }
+}
