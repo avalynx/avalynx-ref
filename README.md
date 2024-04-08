@@ -12,7 +12,7 @@ AvalynxRef  is an implementation of a reference (Ref) system, similar to Refs in
 Here's a simple example of how to use AvalynxRef in your project:
 
 * [Overview](https://avalynx-ref.jbs-newmedia.de/examples/index.html)
-* [Random values](https://avalynx-ref.jbs-newmedia.de/examples/ramdom-values.html)
+* [Random values](https://avalynx-ref.jbs-newmedia.de/examples/random-values.html)
 
 ## Installation
 
