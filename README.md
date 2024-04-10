@@ -82,7 +82,7 @@ AvalynxRef allows the following options for customization:
 
 - `selector`: A custom selector for targeting tables within the DOM (default: `.avalynx-ref`).
 - `options`: An object containing the following keys:
-- `isHtml`: A boolean value indicating whether the value should be treated as HTML (default: `false`).
+  - `isHtml`: A boolean value indicating whether the value should be treated as HTML (default: `false`).
 
 ## Contributing
 
