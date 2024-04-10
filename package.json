@@ -39,9 +39,7 @@
     "@babel/preset-env": "^7.24.4",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0"
-  },
-  "dependencies": {
+    "jest-environment-jsdom": "^29.7.0",
     "punycode": "^2.3.1"
   }
 }
