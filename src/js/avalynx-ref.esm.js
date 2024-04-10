@@ -16,46 +16,46 @@
  */
 
 export class AvalynxRef {
-	constructor(selector, options = {}) {
-		this.isHtml = options.isHtml || false;
+    constructor(selector, options = {}) {
+        this.isHtml = options.isHtml || false;
 
-		if (selector.startsWith('#')) {
-			this.elements = [document.querySelector(selector)];
-		} else {
-			this.elements = document.querySelectorAll(selector);
-		}
-		this._value = null;
-		this.frameRequested = false;
-	}
+        if (selector.startsWith('#')) {
+            this.elements = [document.querySelector(selector)];
+        } else {
+            this.elements = document.querySelectorAll(selector);
+        }
+        this._value = null;
+        this.frameRequested = false;
+    }
 
-	get value() {
-		return this._value;
-	}
+    get value() {
+        return this._value;
+    }
 
-	set value(newValue) {
-		this._value = newValue;
-		this.requestUpdate();
-	}
+    set value(newValue) {
+        this._value = newValue;
+        this.requestUpdate();
+    }
 
-	requestUpdate() {
-		if (!this.frameRequested) {
-			this.frameRequested = true;
-			window.requestAnimationFrame(() => {
-				this.updateElements();
-				this.frameRequested = false;
-			});
-		}
-	}
+    requestUpdate() {
+        if (!this.frameRequested) {
+            this.frameRequested = true;
+            window.requestAnimationFrame(() => {
+                this.updateElements();
+                this.frameRequested = false;
+            });
+        }
+    }
 
-	updateElements() {
-		this.elements.forEach(element => {
-			if (element) {
-				if (this.isHtml) {
-					element.innerHTML = this.value;
-				} else {
-					element.textContent = this.value;
-				}
-			}
-		});
-	}
+    updateElements() {
+        this.elements.forEach(element => {
+            if (element) {
+                if (this.isHtml) {
+                    element.innerHTML = this.value;
+                } else {
+                    element.textContent = this.value;
+                }
+            }
+        });
+    }
 }
