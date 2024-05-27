@@ -80,9 +80,9 @@ myRef.value = "<p>Updated content</p>";
 
 AvalynxRef allows the following options for customization:
 
-- `selector`: A custom selector for targeting tables within the DOM (default: `.avalynx-ref`).
+- `selector`: (string) The selector to use for targeting tables within the DOM (default: `.avalynx-ref`).
 - `options`: An object containing the following keys:
-  - `isHtml`: A boolean value indicating whether the value should be treated as HTML (default: `false`).
+  - `isHtml`: (bool) Treat the value as HTML (default: `false`).
 
 ## Contributing
 
