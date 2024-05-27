@@ -23,6 +23,10 @@ class AvalynxRef {
             selector = '.' + selector;
         }
         this.elements = document.querySelectorAll(selector);
+        if (this.elements.length === 0) {
+            console.error("AvalynxRef: Ref(s) with selector '" + selector + "' not found");
+            return;
+        }
         this.options = {
             isHtml: false,
             ...options
