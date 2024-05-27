@@ -24,7 +24,6 @@ export class AvalynxRef {
             selector = '.' + selector;
         }
         this.elements = document.querySelectorAll(selector);
-        console.log('this.elements count:', this.elements.length);
         this.options = {
             isHtml: false,
             ...options
