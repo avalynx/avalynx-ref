@@ -3,7 +3,7 @@
  *
  * A Ref implementation for updating elements with a value like React's Ref or Vue's Ref.
  *
- * @version 0.0.1
+ * @version 0.0.2
  * @license MIT
  * @author https://github.com/avalynx/avalynx-ref/graphs/contributors
  * @website https://github.com/avalynx/
@@ -17,13 +17,17 @@
 
 export class AvalynxRef {
     constructor(selector, options = {}) {
-        this.isHtml = options.isHtml || false;
-
-        if (selector.startsWith('#')) {
-            this.elements = [document.querySelector(selector)];
-        } else {
-            this.elements = document.querySelectorAll(selector);
+        if (!selector) {
+            selector = '.avalynx-select';
         }
+        if (!selector.startsWith('.') && !selector.startsWith('#')) {
+            selector = '.' + selector;
+        }
+        this.elements = document.querySelectorAll(selector);
+        this.options = {
+            isHtml: false,
+            ...options
+        };
         this._value = null;
         this.frameRequested = false;
     }
@@ -50,7 +54,7 @@ export class AvalynxRef {
     updateElements() {
         this.elements.forEach(element => {
             if (element) {
-                if (this.isHtml) {
+                if (this.options.isHtml) {
                     element.innerHTML = this.value;
                 } else {
                     element.textContent = this.value;
