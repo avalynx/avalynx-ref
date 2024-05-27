@@ -17,7 +17,7 @@
 class AvalynxRef {
     constructor(selector, options = {}) {
         if (!selector) {
-            selector = '.avalynx-select';
+            selector = '.avalynx-ref';
         }
         if (!selector.startsWith('.') && !selector.startsWith('#')) {
             selector = '.' + selector;

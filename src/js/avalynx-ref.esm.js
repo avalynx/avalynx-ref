@@ -18,12 +18,13 @@
 export class AvalynxRef {
     constructor(selector, options = {}) {
         if (!selector) {
-            selector = '.avalynx-select';
+            selector = '.avalynx-ref';
         }
         if (!selector.startsWith('.') && !selector.startsWith('#')) {
             selector = '.' + selector;
         }
         this.elements = document.querySelectorAll(selector);
+        console.log('this.elements count:', this.elements.length);
         this.options = {
             isHtml: false,
             ...options

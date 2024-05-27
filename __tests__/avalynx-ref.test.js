@@ -7,6 +7,7 @@ describe('AvalynxRef', () => {
     beforeEach(() => {
         div = document.createElement('div');
         div.id = 'test';
+        div.className = 'avalynx-ref';
         document.body.appendChild(div);
         avalynxRef = new AvalynxRef('#test');
     });
@@ -24,5 +25,15 @@ describe('AvalynxRef', () => {
         avalynxRef.value = 'Test value';
         avalynxRef.updateElements();
         expect(div.textContent).toBe('Test value');
+    });
+
+    test('check default selector', () => {
+        const avalynxRef2 = new AvalynxRef();
+        expect(avalynxRef2.elements.length).toBe(1);
+    });
+
+    test('check wrong selector', () => {
+        const avalynxRef2 = new AvalynxRef('test123');
+        expect(avalynxRef2.elements.length).toBe(0);
     });
 });
