@@ -1,0 +1,24 @@
+{
+    "name": "avalynx/avalynx-ref",
+    "description": "AvalynxRef is a Ref implementation for updating elements with a value like React's Ref or Vue's Ref.",
+    "keywords": [
+        "avalynx",
+        "ref",
+        "vue",
+        "react"
+    ],
+    "homepage": "https://github.com/avalynx/avalynx-ref",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juergen Schwind an the AvalynxRef authors",
+            "homepage": "https://github.com/avalynx/avalynx-ref/graphs/contributors"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/avalynx/avalynx-ref.git"
+        }
+    ]
+}

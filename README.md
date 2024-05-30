@@ -26,15 +26,15 @@ Include AvalynxRef:
 
 Replace `path/to/avalynx-ref.js` with the actual path to the file in your project.
 
-## Installation via jsDelivr
+## Installation via jsDelivr ([Link](https://cdn.jsdelivr.net/npm/avalynx-ref/))
 
 AvalynxRef is also available via [jsDelivr](https://www.jsdelivr.com/). You can include it in your project like this:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/avalynx-ref/dist/avalynx-ref.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/avalynx-ref@0.0.2/dist/js/avalynx-ref.min.js"></script>
 ```
 
-## Installation via NPM
+## Installation via NPM ([Link](https://www.npmjs.com/package/avalynx-ref))
 
 AvalynxRef is also available as a npm package. You can add it to your project with the following command:
 
@@ -60,6 +60,20 @@ After installing, you can import AvalynxRef into your JavaScript file like this:
 import { AvalynxRef } from 'avalynx-ref';
 ```
 
+## Installation via Composer ([Link](https://packagist.org/packages/avalynx/avalynx-ref))
+
+AvalynxRef is also available as a Composer package. You can add it to your project with the following command:
+
+```bash
+composer require avalynx/avalynx-loader
+```
+
+After installing, you can import AvalynxLoader into your HTML file like this:
+
+```html
+<script src="vendor/avalynx/avalynx-loader/dist/js/avalynx-loader.js"></script>
+``` 
+
 ## Usage
 
 To use AvalynxRef in your project, include the AvalynxRef JavaScript file in your project and initialize the class with the appropriate selector.
@@ -80,10 +94,13 @@ myRef.value = "<p>Updated content</p>";
 
 AvalynxRef allows the following options for customization:
 
-- `selector`: (string) The selector to use for targeting tables within the DOM (default: `.avalynx-ref`).
+- `selector`: (string) The selector to use for targeting tables within the DOM (default: `'.avalynx-ref'`).
 - `options`: An object containing the following keys:
-  - `isHtml`: (bool) Treat the value as HTML (default: `false`).
+  - `isHtml`: (boolean) Treat the value as HTML (default: `false`).
 
+## Planned Features
+- callback function for value change
+ 
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute, please fork the repository and submit a pull request with your changes or improvements. We're looking for contributions in the following areas:

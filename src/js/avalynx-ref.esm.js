@@ -10,9 +10,10 @@
  * @repository https://github.com/avalynx/avalynx-ref.git
  * @bugs https://github.com/avalynx/avalynx-ref/issues
  *
- * @param {string} selector - The selector for the element(s) to update.
- * @param {object} options - Options for the ref.
- * @param {boolean} options.isHtml - If the value is HTML.
+ * @param {string} selector - The selector to use for targeting tables within the DOM (default: '.avalynx-ref').
+ * @param {object} options - An object containing the following keys:
+ * @param {boolean} options.isHtml - Treat the value as HTML (default: false).
+ *
  */
 
 export class AvalynxRef {
