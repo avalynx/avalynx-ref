@@ -1,7 +1,7 @@
 /**
  * AvalynxRef
  *
- * A Ref implementation for updating elements with a value like React's Ref or Vue's Ref.
+ * AvalynxRef is an implementation of a reference (Ref) system, similar to Refs in React or Vue, designed for updating DOM elements with a specified value. This facilitates a reactive linkage between JavaScript data and the user interface.
  *
  * @version 0.0.3
  * @license MIT
