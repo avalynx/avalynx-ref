@@ -33,7 +33,7 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "shx mkdir -p dist/js/; shx cp src/js/avalynx-ref.js dist/js/avalynx-ref.js; shx cp src/js/avalynx-ref.js dist/js/avalynx-ref.esm.js; node build.js dist/js/avalynx-ref.esm.js;"
+    "build": "shx rm -rf dist; shx mkdir -p dist/js/; shx cp src/js/avalynx-ref.js dist/js/avalynx-ref.js; shx cp src/js/avalynx-ref.js dist/js/avalynx-ref.esm.js; node build.js dist/js/avalynx-ref.esm.js;"
   },
   "devDependencies": {
     "@babel/core": "^7",
