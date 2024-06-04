@@ -1,5 +1,4 @@
 const fs = require('fs');
-const path = require('path');
 
 if (process.argv.length < 3) {
     console.error('Please provide the file path as an argument.');
