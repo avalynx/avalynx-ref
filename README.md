@@ -31,7 +31,7 @@ Replace `path/to/avalynx-ref.js` with the actual path to the file in your projec
 AvalynxRef is also available via [jsDelivr](https://www.jsdelivr.com/). You can include it in your project like this:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/avalynx-ref@0.0.3/dist/js/avalynx-ref.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/avalynx-ref@0.0.4/dist/js/avalynx-ref.min.js"></script>
 ```
 
 ## Installation via NPM ([Link](https://www.npmjs.com/package/avalynx-ref))
