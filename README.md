@@ -31,7 +31,7 @@ Replace `path/to/avalynx-ref.js` with the actual path to the file in your projec
 AvalynxRef is also available via [jsDelivr](https://www.jsdelivr.com/). You can include it in your project like this:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/avalynx-ref@0.0.4/dist/js/avalynx-ref.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/avalynx-ref@1.0.0/dist/js/avalynx-ref.min.js"></script>
 ```
 
 ## Installation via NPM ([Link](https://www.npmjs.com/package/avalynx-ref))
@@ -59,6 +59,16 @@ After installing, you can import AvalynxRef into your JavaScript file like this:
 ```javascript
 import { AvalynxRef } from 'avalynx-ref';
 ```
+
+## Installation via Symfony AssetComposer
+
+More information about the Symfony AssetComposer Bundle can be found [here](https://github.com/jbsnewmedia/asset-composer-bundle).
+
+```twig
+{% do addAssetComposer('avalynx/avalynx-ref/dist/js/avalynx-ref.js') %}
+```
+
+Make sure to also include Bootstrap's JS/CSS in your project to ensure AvalynxRef displays correctly.
 
 ## Installation via Composer ([Link](https://packagist.org/packages/avalynx/avalynx-ref))
 
