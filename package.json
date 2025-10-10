@@ -2,7 +2,7 @@
   "name": "avalynx-ref",
   "title": "AvalynxRef",
   "description": "AvalynxRef is a Ref implementation for updating elements with a value like React's Ref or Vue's Ref.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "dist/js/avalynx-ref.js",
   "module": "dist/js/avalynx-ref.esm.js",
