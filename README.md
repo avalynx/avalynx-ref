@@ -1,5 +1,13 @@
 # AvalynxRef
 
+[![npm version](https://img.shields.io/npm/v/avalynx-ref)](https://www.npmjs.com/package/avalynx-ref)
+[![npm downloads](https://img.shields.io/npm/dt/avalynx-ref)](https://www.npmjs.com/package/avalynx-ref)
+[![jsDelivr](https://img.shields.io/jsdelivr/npm/hm/avalynx-ref)](https://www.jsdelivr.com/package/npm/avalynx-ref)
+[![License](https://img.shields.io/npm/l/avalynx-ref)](LICENSE)
+[![Tests](https://github.com/avalynx/avalynx-ref/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/avalynx/avalynx-ref/actions/workflows/tests.yml)
+[![codecov](https://codecov.io/gh/avalynx/avalynx-ref/branch/main/graph/badge.svg)](https://codecov.io/gh/avalynx/avalynx-ref)
+[![GitHub stars](https://img.shields.io/github/stars/avalynx/avalynx-ref?style=flat&logo=github)](https://github.com/avalynx/avalynx-ref)
+
 AvalynxRef is an implementation of a reference (Ref) system, similar to Refs in React or Vue, designed for updating DOM elements with a specified value. This facilitates a reactive linkage between JavaScript data and the user interface.
 
 ## Features
@@ -31,7 +39,7 @@ Replace `path/to/avalynx-ref.js` with the actual path to the file in your projec
 AvalynxRef is also available via [jsDelivr](https://www.jsdelivr.com/). You can include it in your project like this:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/avalynx-ref@1.0.1/dist/js/avalynx-ref.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/avalynx-ref@1.0.2/dist/js/avalynx-ref.min.js"></script>
 ```
 
 ## Installation via NPM ([Link](https://www.npmjs.com/package/avalynx-ref))
